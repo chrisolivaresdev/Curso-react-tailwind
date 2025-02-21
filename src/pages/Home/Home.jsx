@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Layout } from '../../Components/Layout/Layout'
 import { Card } from '../../Components/Card/Card'
+import { ProductDetail } from '../../Components/ProductDetail/ProductDetail'
 
 export const Home = () => {
 
@@ -20,6 +21,8 @@ export const Home = () => {
         Items?.map((item) => <Card key={item.id} data={item} />)
       }
       </div>
+      <ProductDetail />
       </Layout>
   )
 }
+ 
